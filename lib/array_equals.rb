@@ -7,9 +7,8 @@ def array_equals(array1, array2)
   elsif array1 == [] || array2 == []
     return array1 == [] && array2 == []
   elsif array1.length == array2.length
-    array_length = array1.length
     current_index = 0
-    while current_index < array_length
+    while current_index < array1.length
       if array1[current_index] != array2[current_index]
         return false
       end
